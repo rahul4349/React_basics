@@ -1,0 +1,28 @@
+import './App.css'
+import Card from './components/card'
+
+function App() {
+
+  let myObj = {
+    name: "Rahul",
+    age: 23,
+    address: {
+      city: "Jamuni",
+      district: "Ganjam",
+      state: "Odisha"
+    }
+  }
+
+  let newArr = [1,2,3,4,5,6,7,8,9]
+
+  return (
+    <>
+      <h1 className='text-3xl bg-green-500 p-3 rounded-md'>Vite with tailwind</h1>
+      <Card username = "Rahul"/>
+      <Card username = "Hitesh" post = "Software enginear"/>
+      <Card myArr = {newArr}/>
+    </>
+  )
+}
+
+export default App
